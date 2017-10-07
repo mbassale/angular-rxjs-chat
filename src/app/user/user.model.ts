@@ -1,6 +1,8 @@
-
 import {UUID} from 'angular2-uuid';
 
+/**
+ * User is the agent that sends messages
+ */
 export class User {
   id: string;
 
