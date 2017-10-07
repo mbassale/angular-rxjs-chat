@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ChatNavBarComponent } from './chat-nav-bar/chat-nav-bar.component';
 import { ChatThreadsComponent } from './chat-threads/chat-threads.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
+import {userServiceInjectables} from './user/users.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    userServiceInjectables
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
