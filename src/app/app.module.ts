@@ -8,6 +8,7 @@ import { ChatNavBarComponent } from './chat-nav-bar/chat-nav-bar.component';
 import { ChatThreadsComponent } from './chat-threads/chat-threads.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import {userServiceInjectables} from './user/users.service';
+import {messagesServiceInjectables} from './message/messages.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {userServiceInjectables} from './user/users.service';
     HttpModule
   ],
   providers: [
-    userServiceInjectables
+    userServiceInjectables,
+    messagesServiceInjectables
   ],
   bootstrap: [AppComponent]
 })
