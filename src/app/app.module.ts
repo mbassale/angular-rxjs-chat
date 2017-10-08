@@ -9,6 +9,7 @@ import { ChatThreadsComponent } from './chat-threads/chat-threads.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import {userServiceInjectables} from './user/users.service';
 import {messagesServiceInjectables} from './message/messages.service';
+import {threadsServiceInjectables} from './thread/threads.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {messagesServiceInjectables} from './message/messages.service';
   ],
   providers: [
     userServiceInjectables,
-    messagesServiceInjectables
+    messagesServiceInjectables,
+    threadsServiceInjectables
   ],
   bootstrap: [AppComponent]
 })
