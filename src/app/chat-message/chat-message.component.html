@@ -6,7 +6,7 @@
 
   <div class="messages" [ngClass]="{'msg-sent': !incoming, 'msg-receive': incoming}">
     <p>{{ message.text }}</p>
-    <p class="time">{{ message.sender }} - {{ message.sentAt }}</p>
+    <p class="time">{{ message.author }} - {{ message.sentAt }}</p>
   </div>
 
   <div class="avatar" *ngIf="incoming">
