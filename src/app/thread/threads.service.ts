@@ -7,7 +7,9 @@ import {Subject} from 'rxjs/Subject';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import 'rxjs/add/operator/combineLatest';
 import * as _ from 'lodash';
+import {Injectable} from '@angular/core';
 
+@Injectable()
 export class ThreadsService {
 
   threads: Observable<{ [key: string]: Thread }>;
